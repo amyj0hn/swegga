@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order</title>
+
+	<!-- css link -->
+	<link rel="stylesheet" href="./css/styling.css">
+</head>
+<body>
+	
+<div id="page">
+
+	<div id="main">
+		<div id="sidebar">
+			<!-- image -->
+			<img src="./pictures/swegga.jpg" alt="swegga-pic">
+		</div>
+		
+		<div>
+			
+		</div>
+		<div id="banner">
+			<!-- 1.2.3-->
+			<img src="./pictures/delivery.gif" alt="heading">
+		</div>
+
+		<div id="navigation">
+			<!-- 1.2.4-->
+			<img src="./pictures/links.gif" alt="navbar-links">
+	  </div>
+
+	  <form>
+		<table> 
+			<caption>Product Summary</caption>
+			<tr>
+				  <th>Description</th>
+				  <th>Size</th>
+				  <th>Colour</th>
+				  <th>Price</th>
+				  <th>Quantity</th>
+				  <th>Total</th>
+			</tr>
+			<tr>
+				<td> <a href="#">Female Ski Jackets</a></td>
+				<td>
+					<select class="dropdown-list">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="big">Large</option>
+					</select>
+				</td>
+				<td>
+					<select class="dropdown-list">
+						<option value="small">Red</option>
+						<option value="medium">Pink</option>
+						<option value="big">Black</option>
+					</select>
+				</td>
+				<td class="femaleJacketPrice">R150.95</td>
+				<td><input type="number" class="quantity-f" onchange="Total()" class="input"></td>
+				<td id="femalePrice"></td>
+			</tr>
+			<tr>
+				<td><a href="#">Male Ski Jackets</a></td>
+				<td>
+					<select class="dropdown-list">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="big">Large</option>
+					</select>
+				</td>
+				<td>
+					<select class="dropdown-list">
+						  <option value="small">Red</option>
+						  <option value="medium">Blue</option>
+						  <option value="big">White</option>
+					</select>
+				</td>
+				<td class="maleJacketPrice">R180.95</td>
+				<td><input type="number" class="quantity-m" onchange="Total()" class="input"></td>
+				<td id="malePrice"></td>
+			</tr>
+			<tr>
+				  <td colspan="4">Click to confirm and process your order:</td>
+				  <td> <input type="button" value="Total Price" onclick="OrderTotal()"></td>
+				  <td id="TotalPrice"></td>
+			</tr>
+			<tr>
+	
+			</tr>
+		</table>
+  </form>
+
+  <footer class="copyright">
+	<!-- Footer content here -->
+	<p> &copy; 2024 Swegga Fashion - Amy Johnson</p>
+  </footer>
+
+
+
+	</div>
+	
+</div>
+
+
+<!-- Javascript link -->
+	<script src="./script/code.js"></script>
+</body>
+</html>
